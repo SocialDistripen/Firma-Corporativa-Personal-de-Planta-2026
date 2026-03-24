@@ -18,7 +18,7 @@ function generarFirmaHTML(data: SignatureData): string {
   const telefonoFijo = "(601) 482 4377";
   const fotoUrl =
     data.fotoUrl ||
-    "https://distripen.com/img/cms/Firma%20Asesores%202025/Foto%20Prefil.png";
+    "https://distripen.com/img/cms/Firma Corporativa Asesores 2026/13.png";
 
   const contactoLinea = celularCorporativo 
     ? extension 
