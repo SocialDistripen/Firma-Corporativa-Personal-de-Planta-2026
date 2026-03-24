@@ -12,7 +12,7 @@ interface SignatureData {
 
 function generarFirmaHTML(data: SignatureData): string {
   const nombre = data.nombre || "Nombre Apellido";
-  const cargo = data.cargo || "Asesor/a comercial";
+  const cargo = data.cargo || "Diseñador Gráfico";
   const celularCorporativo = data.celularCorporativo || "";
   const extension = data.extension || "";
   const telefonoFijo = "(601) 482 4377";
@@ -293,7 +293,7 @@ export default function Home() {
     },
     {
       name: "fotoUrl",
-      label: "URL de la foto de perfil de la asesora",
+      label: "URL de la foto de perfil",
       placeholder: "Ej: https://distripen.com/img/cms/.../foto.png",
       required: false,
       type: "url",
