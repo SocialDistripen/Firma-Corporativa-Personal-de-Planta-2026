@@ -122,18 +122,18 @@ function generarFirmaHTML(data: SignatureData): string {
             <tbody>
               <tr>
                 <td style="width:25%;text-align:center;vertical-align:middle;padding:5px">
-                  <img src="https://distripen.com/img/cms/Firma%20Asesores%202025/EQA.png" width="32" height="32" alt="EQA" style="height:32px;width:auto;max-width:100%;display:block;margin:0 auto;">
+                  <img src="https://distripen.com/img/cms/Firma%20Asesores%202025/EQA.png" alt="EQA" style="height:50px;width:auto;max-width:100%;display:block;margin:0 auto;">
                   
                 </td>
                 <td style="width:25%;text-align:center;vertical-align:middle;padding:5px">
-                  <img src="https://distripen.com/img/cms/Firma%20Asesores%202025/Fenalco.png" alt="Fenalco Solidario" width="28" height="28" style="height:28px;width:auto;max-width:100%;display:block;margin:0 auto;">
+                  <img src="https://distripen.com/img/cms/Firma%20Asesores%202025/Fenalco.png" alt="Fenalco Solidario" style="height:35px;width:auto;max-width:100%;display:block;margin:0 auto;">
                   
                 </td>
                 <td style="width:25%;text-align:center;vertical-align:middle;padding:5px">
-                  <img src="https://distripen.com/img/cms/Firma%20Asesores%202025/Smeta.png" alt="SMETA" width="24" height="24" style="height:24px;width:auto;max-width:100%;display:block;margin:0 auto;">
+                  <img src="https://distripen.com/img/cms/Firma%20Asesores%202025/Smeta.png" alt="SMETA" style="height:30px;width:auto;max-width:100%;display:block;margin:0 auto;">
                 </td>
                 <td style="width:25%;text-align:center;vertical-align:middle;padding:5px">
-                  <img src="https://distripen.com/img/cms/Firma%20Asesores%202025/ecovadis.png" alt="Ecovadis" width="20" height="20" style="height:20px;width:auto;max-width:100%;display:block;margin:0 auto;">
+                  <img src="https://distripen.com/img/cms/Firma%20Asesores%202025/ecovadis.png" alt="Ecovadis" style="height:21px;width:auto;max-width:100%;display:block;margin:0 auto;">
                 </td>
               </tr>
               <tr>
@@ -180,6 +180,12 @@ function generarFirmaHTML(data: SignatureData): string {
             </a>
           </p>
           <!-- AVISO LEGAL -->
+          <p style="margin-top:15px;margin-right:0;margin-bottom:0;margin-left:0;text-align:justify;">
+  Si desea diligenciar la encuesta de calidad, por favor ingrese 
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNvfBzRDKwUUuG8LSlFoF6YeNLKvHOywDGpjSJ2uvO107gZg/viewform" target="_blank">
+    aquí
+  </a>.
+</p>
           <p style="font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#555555;line-height:1.4;margin-top:15px;margin-right:0;margin-bottom:0;margin-left:0;text-align:justify;">
             AVISO LEGAL: La información contenida en este mensaje es confidencial y para uso exclusivo de la persona u organización a la cual está dirigida. Si no es el receptor autorizado, cualquier retención, difusión, distribución o copia de este mensaje es prohibida y sancionada por la ley. Si por error recibe este mensaje, por favor reenvíelo al remitente y borre el mensaje recibido inmediatamente. Los archivos anexos han sido escaneados y se cree que están libres de virus. Sin embargo, es responsabilidad del receptor asegurarse de ello. DISTRIPEN no se hace responsable por pérdidas o daños causados por su uso. Si desea diligenciar una No Conformidad, por favor ingrese <a rel="noopener noreferrer" style="color:#555555;" href="https://www.appsheet.com/newshortcut/d71ac75e-6f49-4870-b09d-e67dad77a0ba" target="_blank">aquí</a>.
           </p>
@@ -259,29 +265,29 @@ export default function Home() {
   const campos = [
     {
       name: "nombre",
-      label: "Nombre completo de la asesora",
-      placeholder: "Ej: Ana María Arias",
+      label: "Nombre Completo",
+      placeholder: "Ej: Juan Carlos Roa",
       required: true,
       type: "text",
     },
     {
       name: "cargo",
       label: "Cargo",
-      placeholder: "Ej: Asesor/a comercial",
+      placeholder: "Ej: Diseñador Gráfico",
       required: true,
       type: "text",
     },
     {
       name: "celularCorporativo",
       label: "Celular corporativo",
-      placeholder: "Ej: 310 674 9048",
+      placeholder: "Ej: 310 000 0000",
       required: false,
       type: "text",
     },
     {
       name: "extension",
       label: "Extensión",
-      placeholder: "Ej: 123",
+      placeholder: "Ej: 107",
       required: false,
       type: "text",
     },
@@ -305,7 +311,7 @@ export default function Home() {
         />
         <h1 className="text-2xl font-bold text-gray-800">Generador de Firma de Correo</h1>
         <p className="text-gray-700 text-sm mt-1">
-          Llena los datos de la asesora, previsualiza y copia la firma con un clic
+          Llena los datos, previsualiza y copia la firma con un clic
         </p>
       </div>
 
@@ -335,7 +341,7 @@ export default function Home() {
           <div className="mt-5 bg-blue-50 border border-blue-200 rounded-lg p-3 text-xs text-blue-700">
             <strong>💡 Tip:</strong> El logo de Distripen, los certificados, banners y aviso legal
             se incluyen automáticamente en todas las firmas. Solo necesitas cambiar los datos
-            personales de cada asesora.
+            personales.
           </div>
 
           {!camposRequeridos && (
