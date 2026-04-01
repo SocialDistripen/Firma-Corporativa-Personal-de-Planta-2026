@@ -318,7 +318,7 @@ export default function Home() {
       <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Formulario */}
         <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
-          <h2 className="text-lg font-semibold text-gray-800 mb-5">📝 Datos de la asesora</h2>
+          <h2 className="text-lg font-semibold text-gray-800 mb-5">📝 Datos del personal</h2>
           <div className="space-y-4">
             {campos.map((campo) => (
               <div key={campo.name}>
